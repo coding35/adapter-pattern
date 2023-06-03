@@ -7,10 +7,10 @@ SMSLegacyProvider smsLegacyProvider = new SMSLegacyProvider();
 
 
 SMSNextGenProvider smsNextGenProvider = new SMSNextGenProvider();
-var smsAdapter = new SMSAdapter(smsNextGenProvider);
+var smsNextGenAdapter = new SMSAdapter(smsNextGenProvider);
 
 TestProvider(smsLegacyProvider);
-TestProvider(smsAdapter);
+TestProvider(smsNextGenAdapter);
 
 static void TestProvider(ISMSLegacyProvider provider)
 {
